@@ -1,0 +1,389 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*----------------------------------------------BODY DEL INDEX---------------------------------------------*/
+.index__body {
+  display: flex;
+  min-height: 100vh;
+  margin: 0;
+  flex-direction: column;
+  background-color: #16191e;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+/*--------------------------BODY DE LAS PAGINAS DE CONTACTO Y PREGUNTAS FRECUENTES-------------------------*/
+
+.faq__abme {
+  background-color: #16191e;
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 0.3fr 2.4fr 0.3fr;
+  grid-template-rows: 0.1fr 2.4fr 0.25fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
+.main__secundarias {
+  grid-area: main;
+}
+.faq__abme__header {
+  grid-area: header;
+}
+.footer__all__legals {
+  grid-area: footer;
+}
+
+/*--------------------------------------BODY DEL RESTO DE LAS PAGINAS--------------------------------------*/
+
+.all__body {
+  display: grid;
+  background-color: #16191e;
+  min-height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 1.8fr 0.2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
+
+.all_main {
+  grid-area: main;
+}
+
+.all_header {
+  grid-area: header;
+}
+
+.footer {
+  grid-area: footer;
+}
+/*---------body contacto---------*/
+
+/*----------------------------------------------HEADER DEL INDEX------------------------------------------*/
+.index__header {
+  display: flex;
+  justify-content: flex-end;
+}
+.index__header__navbar {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  padding: 2.2rem;
+  padding-inline: 5.1rem;
+}
+.index__header__navbar ul {
+  display: inline-flex;
+}
+.index__header__navbar ul li {
+  padding-inline: 1rem;
+}
+.index__header__navbar ul li a {
+  font-family: "Roboto", sans-serif;
+  color: aliceblue;
+  font-weight: bold;
+}
+
+/*-------------------------HEADER DE LAS PAGINAS DE CONTACTO Y PREGUNTAS FRECUENTES-------------------------*/
+.faq__abme__header nav {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+}
+.faq__abme__header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: baseline;
+}
+.faq__abme__header ul {
+  display: flex;
+}
+.faq__abme__header ul li {
+  display: flex;
+  padding-inline: 1rem;
+}
+.faq__abme__header ul li a {
+  font-family: "Roboto", sans-serif;
+  color: aliceblue;
+}
+.faq__abme__header h1 {
+  font-family: "Roboto", sans-serif;
+  color: aliceblue;
+  margin: 1rem;
+}
+
+/*--------------------------------------HEADER DEL RESTO DE LAS PAGINAS--------------------------------------*/
+.all__header {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #d85a5a;
+  padding: 1rem;
+  width: 100vw;
+}
+.all__header ul {
+  display: flex;
+}
+.all__header ul li {
+  display: flex;
+  padding-inline: 1rem;
+}
+.all__header ul li a {
+  font-family: "Roboto", sans-serif;
+  color: aliceblue;
+}
+
+/*----------------------------------------------MAIN DEL INDEX---------------------------------------------*/
+.index__main__section {
+  display: flex;
+  height: 100vh;
+  background-image: url(../resources/index/bg-mobile-v.2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  background-size: cover;
+}
+.index__main__section__empezar {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 2rem;
+  flex-direction: column;
+  align-items: center;
+}
+.index__main__titulo {
+  text-align: center;
+}
+.index__main__titulo h1 {
+  font-size: 100px;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  color: aliceblue;
+}
+.index__main__titulo h2 {
+  font-size: 36px;
+  font-family: "Roboto", sans-serif;
+  color: aliceblue;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+.index__main__boton {
+  padding: 1rem;
+}
+.index__main__boton a {
+  color: #d85a5a;
+}
+.index__main__boton a button {
+  padding: 1.2rem;
+  padding-inline: 4rem;
+  font-family: "Roboto", sans-serif;
+  background-color: #d85a5a;
+  color: aliceblue;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 8px;
+  letter-spacing: 1px;
+  border-color: #16191e;
+}
+.index__main__tarjetas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.index__main__tarjetas article a img {
+  border-radius: 1rem;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.index__main__tarjetas article {
+  display: flex;
+  margin: 1rem;
+}
+.index__main__iframe {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+.index__main__iframe__videos iframe {
+  display: none;
+  width: 1280px;
+  height: 720px;
+}
+.index__main__iframe__videos {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+/*-----------------------------MAIN DE LAS PREGUNTAS FRECUENTES Y EL CONTACTO------------------------------*/
+/*---------main about me-----------*/
+.main__secundarias ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-inline: 1rem;
+  max-width: 100%;
+}
+.main__secundarias ul li {
+  margin: 2rem;
+  min-width: 100%;
+}
+.main__secundarias ul li h2 {
+  font-family: "Roboto", sans-serif;
+  color: aliceblue;
+  margin-bottom: 0.5rem;
+}
+.main__secundarias ul li p {
+  background-color: #cccccc;
+  color: #16191e;
+  padding: 1rem;
+  border-radius: 6px;
+  font-family: "Roboto", sans-serif;
+}
+
+/*--------------------------------------MAIN DEL RESTO DE LAS PAGINAS--------------------------------------*/
+/*---------main contacto-----------*/
+.main__contacto {
+}
+/*---------------------------------------------FOOTER DEL INDEX--------------------------------------------*/
+/*----------------------------FOOTER DE LAS PREGUNTAS FRECUENTES Y EL CONTACTO-----------------------------*/
+/*-------------------------------------FOOTER DEL RESTO DE LAS PAGINAS-------------------------------------*/
+
+.footer {
+  display: flex;
+  background-color: #d85a5a;
+  align-self: flex-end;
+}
+.footer__all {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  flex-direction: column;
+  margin: 3rem 0rem;
+}
+
+.footer__all__social {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__all__legal {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__all__legal ul {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__all__social ul {
+  display: grid;
+  grid-template-areas:
+    "facebook twitter"
+    "instragram youtube";
+  gap: 3.5rem;
+}
+.facebook {
+  grid-area: "facebook";
+}
+.twitter {
+  grid-area: "twitter";
+}
+.instagram {
+  grid-area: "instagram";
+}
+.youtube {
+  grid-area: "youtube";
+}
+
+.footer__all__legals ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+.footer__all__legals ul li a {
+  color: aliceblue;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+/*-if not in (pantalla <481 px){
+  aplicame todos estos estilos
+  esto va a pasar a partir de los 480 px
+}*/
+
+@media (min-width: 481px) {
+  /*----------------------main index-------------------------*/
+  .index__main__section {
+    background-image: url(../resources/index/bg-empezar.png);
+  }
+
+  .index__main__iframe__videos iframe {
+    display: flex;
+    width: 1280px;
+    height: 720px;
+  }
+
+  .index__main__section__empezar {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    bottom: 0;
+    flex-direction: row;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5rem;
+  }
+
+  .footer__all__legals ul,
+  .footer__all__social ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.5rem;
+    justify-content: space-evenly;
+  }
+  .footer__all__legals ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .footer__all__social {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .main__secundarias ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: 7rem;
+    max-width: 100%;
+  }
+
+  .footer__all {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    margin: 0rem 0rem;
+  }
+}
